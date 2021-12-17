@@ -1,0 +1,422 @@
+body {
+  background-color: #2e2e2e;
+  padding: 10px 10px;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.float-botton {
+  background-color: #59C714;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 99;
+  bottom: 22px;
+  right: 12px;
+}
+
+.float-botton .iconup {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.navbar .logo img {
+  width: 60px;
+}
+
+.navbar .github img {
+  width: 35px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.nesting {
+  background-color: #313131;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nesting p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.simbolDan {
+  background-color: #313131;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.simbolDan:hover {
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.simbolDan button {
+  background-color: blue;
+  padding: 12px 25px;
+  border: none;
+  color: #fff;
+}
+
+.simbolDan button.tombol {
+  float: left;
+  background-color: green;
+}
+
+.simbolDan p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.variable {
+  background-color: #313131;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.variable p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.circle {
+  margin: 0 auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.circle .small {
+  background-color: blue;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.circle .small:hover {
+  background-color: green;
+  border-radius: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 0;
+}
+
+.circle .medium {
+  background-color: yellow;
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+}
+
+.circle .medium:hover {
+  background-color: blue;
+  border-radius: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 0;
+}
+
+.circle .large {
+  background-color: green;
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+}
+
+.circle .large:hover {
+  background-color: red;
+  border-radius: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 0;
+}
+
+.function-blue-darken {
+  margin-top: 40px;
+  background-color: #313131;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.function-blue-darken .blue1 {
+  width: 40px;
+  height: 40px;
+  background-color: #3e3eff;
+}
+
+.function-blue-darken .blue2 {
+  width: 40px;
+  height: 40px;
+  background-color: #1f1fff;
+}
+
+.function-blue-darken .blue3 {
+  width: 40px;
+  height: 40px;
+  background-color: #0101ff;
+}
+
+.function-blue-darken .blue4 {
+  width: 40px;
+  height: 40px;
+  background-color: #0000c3;
+}
+
+.function-blue-darken .blue5 {
+  width: 40px;
+  height: 40px;
+  background-color: #000048;
+}
+
+.function-green-lighten {
+  margin-top: 40px;
+  background-color: #313131;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.function-green-lighten .green1 {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+}
+
+.function-green-lighten .green2 {
+  width: 40px;
+  height: 40px;
+  background-color: #009f00;
+}
+
+.function-green-lighten .green3 {
+  width: 40px;
+  height: 40px;
+  background-color: #00bd00;
+}
+
+.function-green-lighten .green4 {
+  width: 40px;
+  height: 40px;
+  background-color: #00fa00;
+}
+
+.function-green-lighten .green5 {
+  width: 40px;
+  height: 40px;
+  background-color: #76ff76;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  body {
+    padding: 20px 60px;
+  }
+  .float-botton {
+    bottom: 35px;
+    right: 20px;
+  }
+  button.tombol {
+    margin: 0 12px;
+    float: left;
+    background-color: green;
+  }
+  .circle {
+    margin: 0 auto;
+    height: auto;
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .circle .small {
+    background-color: blue;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+  }
+  .circle .small:hover {
+    background-color: green;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+  .circle .medium {
+    background-color: yellow;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+  }
+  .circle .medium:hover {
+    background-color: blue;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+  .circle .large {
+    background-color: green;
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  .circle .large:hover {
+    background-color: red;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 40px 120px;
+  }
+  .float-botton {
+    bottom: 45px;
+    right: 40px;
+  }
+  button.tombol {
+    margin: 0 12px;
+    float: left;
+    background-color: green;
+  }
+  .circle {
+    margin: 0 auto;
+    height: auto;
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .circle .small {
+    background-color: blue;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+  }
+  .circle .small:hover {
+    background-color: green;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+  .circle .medium {
+    background-color: yellow;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+  }
+  .circle .medium:hover {
+    background-color: blue;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+  .circle .large {
+    background-color: green;
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  .circle .large:hover {
+    background-color: red;
+    border-radius: 100px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
