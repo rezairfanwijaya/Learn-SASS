@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/img/sasslogo.png">
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <title>Learn SASS</title>
+</head>
+
+<body id="home">
+
+
+    <!-- data-aos="fade-right" -->
+
+    <!-- float botton -->
+    <a href="#home">
+        <div class="float-botton" data-aos="fade-up" data-aos-delay="90" data-aos-duration="1000">
+            <ion-icon name="chevron-up-outline" class="iconup"></ion-icon>
+        </div>
+    </a>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/img/logo-dark.png" alt="logo">
+            </a>
+        </div>
+        <div class="github">
+            <a href="">
+                <img src="assets/img/github-dark.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- nesting -->
+    <h1>Nesting</h1>
+    <div class="nesting">
+        <p>Nesting adalah sarang</p>
+    </div>
+    <!-- nesting -->
+
+    <!-- nesting -->
+    <h1>Simbol &</h1>
+    <div class="simbolDan">
+        <p>Simbol & biasa digunakan untuk hover dan efek lainnya. <br> Selain itu juga dipakai untuk mendefiniskan class pada parent (element spesifik)</p>
+        <br>
+        <button type="submit" class="tombol">Tombol</button>
+        <button type="submit">Tombol</button>
+    </div>
+    <!-- nesting -->
+
+    <!-- nesting -->
+    <h1>Variable</h1>
+    <div class="variable">
+        <p>Sama seperti di bahasa pemrograman, variable dipakai untuk menampung data </p>
+
+    </div>
+    <!-- nesting -->
+
+
+    <!-- lingakaran -->
+    <div class="circle">
+        <div class="small"></div>
+        <div class="medium"></div>
+        <div class="large"></div>
+    </div>
+    <!-- lingakaran -->
+
+    <!-- function -->
+    <h1>Function Darken</h1>
+    <div class="function-blue-darken">
+        <div class="blue1"></div>
+        <div class="blue2"></div>
+        <div class="blue3"></div>
+        <div class="blue4"></div>
+        <div class="blue5"></div>
+    </div>
+
+    <h1>Function lighten</h1>
+    <div class="function-green-lighten">
+        <div class="green1"></div>
+        <div class="green2"></div>
+        <div class="green3"></div>
+        <div class="green4"></div>
+        <div class="green5"></div>
+    </div>
+
+
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+</html>
