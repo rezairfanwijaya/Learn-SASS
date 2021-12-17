@@ -1,0 +1,325 @@
+    // import warna (variables)
+    @import "pallete";
+    body {
+        background-color: rgb(46, 46, 46);
+        padding: 10px 10px;
+        scroll-behavior: smooth;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    // variable
+    // variabe di bawah saya pindahkan ke pallete.scss untuk menjalankan perintah import
+    // untuk file yang akan diimport nama file nya harus diawali _
+    // $warnabiru:rgb(62, 62, 255);
+    // $warnahijau:green;
+    // $warnaFont:#fff;
+    // $fontSize:1.2rem;
+    // $warbaBGSection: rgb(49, 49, 49);
+    // $padding: 50px;
+    // $marginBottom: 40px;
+    // mixin
+    @mixin kartu {
+        background-color: $warnaBGSection;
+        padding: $padding;
+        margin-bottom: $marginBottom;
+        border-radius: 12px;
+        box-shadow: 3px 2px 10px rgba(0, 0, 0, .2px);
+    }
+    
+    @mixin font {
+        color: $warnaFont;
+        font-size: $fontSize;
+    }
+    
+    @mixin circle ($color) {
+        background-color: $color;
+        border-radius: 100px;
+    }
+    
+    @mixin rotate {
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+    
+    @mixin functionSM {
+        width: 40px;
+        height: 40px;
+    }
+    
+    // float botton
+    .float-botton {
+        @include circle(#59C714);
+        @include functionSM();
+        position: fixed;
+        z-index: 99;
+        bottom: 22px;
+        right: 12px;
+        .iconup {
+            color: $warnaFont;
+            font-size: $fontSize;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+    
+    // navbar
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        .logo img {
+            width: 60px;
+        }
+        .github img {
+            width: 35px;
+        }
+    }
+    
+    h1 {
+        color: $warnaFont;
+    }
+    
+    .nesting {
+        @include kartu();
+        p {
+            @include font();
+        }
+    }
+    
+    .simbolDan {
+        @include kartu();
+        &:hover {
+            transform: translateY(-23px);
+            transition: .6s;
+        }
+        button {
+            background-color: blue;
+            padding: 12px 25px;
+            border: none;
+            // margin: 0 3px;
+            color: $warnaFont;
+            &.tombol {
+                float: left;
+                background-color: green;
+            }
+        }
+        p {
+            @include font();
+        }
+    }
+    
+    .variable {
+        @include kartu();
+        p {
+            @include font();
+        }
+    }
+    
+    .circle {
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .small {
+            @include circle(blue);
+            height: 20px;
+            width: 20px;
+            &:hover {
+                @include circle(green);
+                @include rotate();
+                border-radius: 0;
+            }
+        }
+        .medium {
+            @include circle(yellow);
+            height: 60px;
+            width: 60px;
+            &:hover {
+                @include circle(blue);
+                @include rotate();
+                border-radius: 0;
+            }
+        }
+        .large {
+            @include circle(green);
+            height: 90px;
+            width: 90px;
+            &:hover {
+                @include circle(red);
+                @include rotate();
+                border-radius: 0;
+            }
+        }
+    }
+    
+    .function-blue-darken {
+        margin-top: 40px;
+        @include kartu();
+        display: flex;
+        justify-content: center;
+        .blue1 {
+            @include functionSM();
+            background-color: $warnabiru;
+        }
+        .blue2 {
+            @include functionSM();
+            background-color: darken($warnabiru, 6%);
+        }
+        .blue3 {
+            @include functionSM();
+            background-color: darken($warnabiru, 12%);
+        }
+        .blue4 {
+            @include functionSM();
+            background-color: darken($warnabiru, 24%);
+        }
+        .blue5 {
+            @include functionSM();
+            background-color: darken($warnabiru, 48%);
+        }
+    }
+    
+    .function-green-lighten {
+        margin-top: 40px;
+        @include kartu();
+        display: flex;
+        justify-content: center;
+        .green1 {
+            @include functionSM();
+            background-color: $warnahijau;
+        }
+        .green2 {
+            @include functionSM();
+            background-color: lighten($warnahijau, 6%);
+        }
+        .green3 {
+            @include functionSM();
+            background-color: lighten($warnahijau, 12%);
+        }
+        .green4 {
+            @include functionSM();
+            background-color: lighten($warnahijau, 24%);
+        }
+        .green5 {
+            @include functionSM();
+            background-color: lighten($warnahijau, 48%);
+        }
+    }
+    
+    @media (min-width:767px) and (max-width:1023px) {
+        body {
+            padding: 20px 60px;
+        }
+        .float-botton {
+            bottom: 35px;
+            right: 20px;
+        }
+        button {
+            &.tombol {
+                margin: 0 12px;
+                float: left;
+                background-color: green;
+            }
+        }
+        .circle {
+            margin: 0 auto;
+            height: auto;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            .small {
+                @include circle(blue);
+                height: 60px;
+                width: 60px;
+                &:hover {
+                    @include circle(green);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+            .medium {
+                @include circle(yellow);
+                height: 100px;
+                width: 100px;
+                &:hover {
+                    @include circle(blue);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+            .large {
+                @include circle(green);
+                height: 150px;
+                width: 150px;
+                &:hover {
+                    @include circle(red);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    
+    @media (min-width:1024px) {
+        body {
+            padding: 40px 120px;
+        }
+        .float-botton {
+            bottom: 45px;
+            right: 40px;
+        }
+        button {
+            &.tombol {
+                margin: 0 12px;
+                float: left;
+                background-color: green;
+            }
+        }
+        .circle {
+            margin: 0 auto;
+            height: auto;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            .small {
+                @include circle(blue);
+                height: 60px;
+                width: 60px;
+                &:hover {
+                    @include circle(green);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+            .medium {
+                @include circle(yellow);
+                height: 100px;
+                width: 100px;
+                &:hover {
+                    @include circle(blue);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+            .large {
+                @include circle(green);
+                height: 150px;
+                width: 150px;
+                &:hover {
+                    @include circle(red);
+                    @include rotate();
+                    border-radius: 0;
+                }
+            }
+        }
+    }
